@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Doctors</title>
+    <title>Doctors - RHealth</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">RHealth</div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="doctors.html">Doctors</a></li>
-                    <li><a href="appointments.html">Appointments</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="https://i.ibb.co/SBr1fhd/Screenshot-2024-08-01-213904.png" alt="RHealth Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Doctors Section -->
     <section id="doctors">
-        <div class="container">
-            <h2>Our Doctors</h2>
-            <div class="doctor-profile" onclick="window.location.href='appointments.html'">
-                <img src="doctor1.jpg" alt="Dr. Jane Doe">
-                <h3>Dr. Jane Doe</h3>
-                <p>Specialty: General Medicine</p>
-                <p>Experience: 10 years</p>
-                <p>Availability: Mon-Fri, 9 AM - 5 PM</p>
-                <p>Rating: ★★★★☆</p>
-            </div>
-            <div class="doctor-profile" onclick="window.location.href='appointments.html'">
-                <img src="doctor2.jpg" alt="Dr. John Smith">
-                <h3>Dr. John Smith</h3>
-                <p>Specialty: Pediatrics</p>
-                <p>Experience: 8 years</p>
-                <p>Availability: Mon-Fri, 10 AM - 6 PM</p>
-                <p>Rating: ★★★★★</p>
-            </div>
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor-profile">
+            <img src="https://www.shape.com/thmb/q-mU0BCcgv9JhCkETuSILva8yfg=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/black-female-doctor-6d6a6c2ec3ae48ceaeeae61f78b7038e.jpg" alt="Dr. Smita Tripathi">
+            <h3>Dr. Smita Tripathi</h3>
+            <p>Specialties: Cardiology</p>
+            <p>Experience: 10 years</p>
+            <p>Virtual Consultation Hours: Mon-Fri, 9 AM - 5 PM</p>
+            <button onclick="bookAppointment('Dr. Smita Tripathi')">Book Appointment</button>
+        </div>
+        <div class="doctor-profile">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/287/384/non_2x/a-mature-indian-male-doctor-on-a-white-background-ai-generated-photo.jpg" alt="Dr. Gaurav Sinha">
+            <h3>Dr. Gaurav Sinha</h3>
+            <p>Specialties: Neurology</p>
+            <p>Experience: 15 years</p>
+            <p>Virtual Consultation Hours: Tue-Thu, 10 AM - 6 PM</p>
+            <button onclick="bookAppointment('Dr. Gaurav Sinha')">Book Appointment</button>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 RHealth. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 RHealth. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
