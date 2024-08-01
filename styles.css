@@ -33,52 +33,46 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0;
+    display: inline;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #f2cc8f;
-}
-
-#home {
-    background: url('https://img.freepik.com/free-photo/medical-teleconsultation-sick-patient-home_23-2149329047.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722038400&semt=ais_user') no-repeat center center/cover;
+section#home {
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
 }
 
-#home h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+section#home h1 {
+    font-size: 3rem;
+    margin: 0;
 }
 
-#home p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+section#home p {
+    font-size: 1.5rem;
 }
 
-.btn {
-    background: #e07a5f;
+section#home .btn {
+    background: #f4a261;
     color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
-.btn:hover {
-    background: #3d405b;
+section#doctors, section#appointments, section#login {
+    padding: 2rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -86,90 +80,46 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: auto;
-}
-
-#success h1, #appointments h2, #doctors h2, #login h2 {
-    margin-bottom: 1rem;
-}
-
-form {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #3d405b;
-}
-
-form input, form select, form button {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #e07a5f;
-    color: white;
-    border: none;
-    font-weight: bold;
-}
-
-form button:hover {
-    background: #3d405b;
 }
 
 .doctor-profile {
-    background: white;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #e9c46a;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 .doctor-profile img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
 }
 
 .doctor-profile h3 {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
-.doctor-profile p {
-    margin-bottom: 0.5rem;
-    color: #3d405b;
+form label {
+    display: block;
+    margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    #home h1 {
-        font-size: 2rem;
-    }
-
-    #home p {
-        font-size: 1rem;
-    }
+form .btn {
+    background: #81b29a;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
 }
