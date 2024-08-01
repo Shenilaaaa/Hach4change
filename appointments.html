@@ -3,52 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book an Appointment</title>
+    <title>Appointments - RHealth</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">RHealth</div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="doctors.html">Doctors</a></li>
-                    <li><a href="appointments.html">Appointments</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="https://i.ibb.co/SBr1fhd/Screenshot-2024-08-01-213904.png" alt="RHealth Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Appointments Section -->
     <section id="appointments">
-        <div class="container">
-            <h2>Book an Appointment</h2>
-            <form id="appointment-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="doctor">Select Doctor:</label>
-                <select id="doctor" name="doctor" required>
-                    <option value="Dr. Jane Doe">Dr. Jane Doe</option>
-                    <option value="Dr. John Smith">Dr. John Smith</option>
-                </select>
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="time">Preferred Time:</label>
-                <input type="time" id="time" name="time" required>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+        <h2>Your Appointments</h2>
+        <div id="appointment-list">
+            <p>No appointments scheduled. <a href="doctors.html">Book now</a>.</p>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 RHealth. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 RHealth. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
