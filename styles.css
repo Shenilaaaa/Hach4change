@@ -1,26 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #007BFF;
-    color: #fff;
+    background: #4CAF50;
+    padding: 10px 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-header .logo img {
-    height: 50px;
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 40px;
+    margin-right: 10px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
@@ -29,106 +44,48 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
-section {
-    padding: 20px;
-}
-
-section#home {
-    background: #f0f0f0;
+.hero {
+    background: url('image.png') no-repeat center center/cover;
+    color: white;
     text-align: center;
-}
-
-section#home h1 {
-    margin-top: 0;
-}
-
-.doctor-profile {
+    padding: 100px 20px;
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
-.doctor-profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-.doctor-profile h3 {
-    margin: 10px 0;
-}
-
-.doctor-profile button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.doctor-profile button:hover {
-    background: #0056b3;
-}
-
-footer {
-    background: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background: #0056b3;
-}
-
-#appointment-list {
-    text-align: center;
-}
-
-#appointment-list a {
-    color: #007BFF;
+.hero .btn {
+    background: #FF5733;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
 }
 
-#appointment-list a:hover {
-    text-decoration: underline;
+.hero .btn:hover {
+    background: #C70039;
 }
 
 @media (max-width: 768px) {
@@ -140,9 +97,5 @@ form button:hover {
     nav ul li {
         margin-left: 0;
         margin-bottom: 10px;
-    }
-
-    footer {
-        position: static;
     }
 }
