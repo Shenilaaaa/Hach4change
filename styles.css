@@ -1,125 +1,148 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #81b29a;
-    padding: 1rem 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-nav {
+    background: #007BFF;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
-nav .logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+header .logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1rem;
 }
 
 nav ul li {
-    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+}
+
+section {
+    padding: 20px;
 }
 
 section#home {
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
+    background: #f0f0f0;
     text-align: center;
-    padding: 5rem 0;
 }
 
 section#home h1 {
-    font-size: 3rem;
-    margin: 0;
+    margin-top: 0;
 }
 
-section#home p {
-    font-size: 1.5rem;
+.doctor-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-section#home .btn {
-    background: #f4a261;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
+.doctor-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-section#doctors, section#appointments, section#login {
-    padding: 2rem 0;
+.doctor-profile h3 {
+    margin: 10px 0;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.doctor-profile button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.doctor-profile button:hover {
+    background: #0056b3;
 }
 
 footer {
-    background: #3d405b;
-    color: white;
+    background: #007BFF;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: absolute;
+    padding: 10px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.doctor-profile {
-    background: #e9c46a;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.doctor-profile img {
-    width: 100px;
-    border-radius: 50%;
-}
-
-.doctor-profile h3 {
-    margin: 0.5rem 0 0.5rem 0;
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
 }
 
 form label {
-    display: block;
-    margin-top: 1rem;
+    margin: 10px 0 5px;
 }
 
-form input, form select {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form .btn {
-    background: #81b29a;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    margin-top: 1rem;
-    display: inline-block;
+form button {
+    background: #007BFF;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+#appointment-list {
+    text-align: center;
+}
+
+#appointment-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#appointment-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        position: static;
+    }
 }
